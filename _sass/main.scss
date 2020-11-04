@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+body {
+  width: 80vw;
+  margin: 15px auto;
+  font-family: 'Quattrocento Sans', Arial, sans-serif;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-family: 'Passion One',impact;
+}
+h1, h2 {
+  color: orange;
+}
+h3 {
+  color: #000;
+}
+a {
+  color: crimson;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+nav a {
+  padding: 6px;
+  background-color: #eee;
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  padding-left: 0px;
+}
+li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+u {
+  color: orange;
+  font-weight: bold;
+}
+hr {
+  border-color: orange;
+  border-top: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+// Specific styles
+// =========================
+.current {
+  color: red;
+}
+.feed {
+  padding: 10px;
+}
+@media (max-width: 820px) {
+  .feed {
+    padding: 0;
+  }
+}
+.feed__inhoud {
+  // margin: 2px 11px;
+  padding: 6px;
+  border: 1px solid orange;
+  border-radius: 6px;
+  background-color: rgba(249,158,31,0.08);
+}
+.feed__inhoud li small,
+.post-date {
+  color: GoldenRod;
+}
+.afwezig,
+.lesverplaatsing,
+.vakantie,
+.activiteiten {
+  /* width: 45%; */
+  margin: 5px;
+}
+.afwezig__item {
+  background-color: rgba(249,158,31,0.08);
+}
+.lesverplaatsing__item {
+  background-color: rgba(249,158,31,0.08);
+}
+.vakantie__item {
+  background-color: rgba(249,158,31,0.08);
+}
+.activiteiten__item {
+  background-color: rgba(249,158,31,0.08);
+}
+main h2 {
+  color: #000;
+}
+main ul {
+  padding: 6px;
+}
+main li {
+  list-style: none;
+  padding-bottom: 4px;
+}
+// madia queries
+// =========================

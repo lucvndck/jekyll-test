@@ -1,0 +1,50 @@
+---
+layout: default
+title: Home
+---
+
+<main>
+      <!-- section live feed -->
+      <section class="afwezig">
+        <h2>Afwezigheden</h2>
+        <div class="afwezig__item no-border pijl">
+          <ul>
+            {% for item in site.data.afwezig %}
+            <li><strong>{{ item.name }}</strong> {{ item.reason }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+      <section class="lesverplaatsing">
+        <h2>lesverplaatsingen</h2>
+        <div class="lesverplaatsing__item no-border pijl">
+          <ul>
+            {% for item in site.data.lesverplaatsing %}
+              <li><strong>{{ item.name }}</strong> verplaatst les van {{ item.datum-van | date_to_string }} naar {{ item.datum-naar | date_to_string }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+      <section class="vakantie">
+        <h2>Extra vakantiedagen</h2>
+        <div class="vakantie__item no-border">
+          <ul>
+            <li>Jaarmarkt ma 19 oktober</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <section class="activiteiten">
+        <h2>activiteiten</h2>
+        <div class="activiteiten__item no-border">
+          <ul>
+            <li>geen</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  <hr>
+  {% include homeinclude.html %}

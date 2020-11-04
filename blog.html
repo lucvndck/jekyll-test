@@ -1,0 +1,21 @@
+---
+layout: default
+title: blog
+---
+<h1>Latest posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <small class="post-date">{{ post.date | date_to_string }}</small>
+    {{ post.excerpt }}
+  </li>
+  {% endfor %}
+</ul>
+
+<!-- hieronder heb ik wat rommel gezet om te testen -->
+<hr>
+<footer>
+  <h3>einde van de blogpost</h3>
+</footer>
